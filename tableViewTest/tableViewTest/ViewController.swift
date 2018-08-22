@@ -12,6 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let titleList = ["a","b","c"]
 
     
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -39,13 +40,34 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
 
         let myTableView = UITableView()
+        let mystackView = UIStackView()
+        let mybtn1 = UIButton()
+        let mybtn2 = UIButton()
+        mystackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(mystackView)
+        mystackView.axis = .horizontal
+        mystackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        mystackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        mystackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        mybtn1.backgroundColor = .red
+        mybtn2.backgroundColor = .green
+        mybtn1.setTitle("Btn1", for: .normal)
+        mybtn2.setTitle("Btn2", for: .normal)
+        mybtn1.addTarget(self, action: #selector(btn1Action), for: .touchUpInside)
+        mybtn2.addTarget(self, action: #selector(btn2Action), for: .touchUpInside)
+        mystackView.distribution = .fillEqually
+        
+        mystackView.addArrangedSubview(mybtn1)
+        mystackView.addArrangedSubview(mybtn2)
+        
+//
   
         myTableView.translatesAutoresizingMaskIntoConstraints = false
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         view.addSubview(myTableView)
-        myTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        myTableView.topAnchor.constraint(equalTo: mystackView.bottomAnchor, constant: 0).isActive = true
         myTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         myTableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         //myTableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
@@ -54,6 +76,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @objc func btn1Action(){
+        
+        print("btn1")
+    }
+    @objc func btn2Action(){
+        
+        print("btn2")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

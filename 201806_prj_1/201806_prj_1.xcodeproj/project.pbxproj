@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC11907B20C58F13004DD48E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11907A20C58F13004DD48E /* AppDelegate.swift */; };
+		AC11907D20C58F13004DD48E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11907C20C58F13004DD48E /* ViewController.swift */; };
+		AC11908020C58F13004DD48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC11907E20C58F13004DD48E /* Main.storyboard */; };
+		AC11908220C58F15004DD48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC11908120C58F15004DD48E /* Assets.xcassets */; };
+		AC11908520C58F15004DD48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC11908320C58F15004DD48E /* LaunchScreen.storyboard */; };
+		AC11908D20C59695004DD48E /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11908C20C59695004DD48E /* MyTabBarViewController.swift */; };
+		AC11908F20C59B76004DD48E /* MyHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11908E20C59B76004DD48E /* MyHomePageViewController.swift */; };
+		AC22AA1B20C6B91200CC3CFF /* MypickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22AA1A20C6B91200CC3CFF /* MypickViewController.swift */; };
+		AC6B5FD520D2355B00C9669D /* MybookingUserInfoInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B5FD420D2355B00C9669D /* MybookingUserInfoInputViewController.swift */; };
+		AC6DA4B820D18BF900D36318 /* myNumberTickertAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA4B720D18BF900D36318 /* myNumberTickertAlertViewController.swift */; };
+		AC854D1020C7F4AE0089256D /* MySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC854D0F20C7F4AE0089256D /* MySegmentedControl.swift */; };
+		AC8C564E20CBBB2600329FC8 /* PayTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8C564D20CBBB2600329FC8 /* PayTicketViewController.swift */; };
+		AC8C565220CC05F000329FC8 /* DeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8C565120CC05F000329FC8 /* DeviceInput.swift */; };
+		AC90086E20C841BA00D788CF /* MyNumberTicketPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90086D20C841BA00D788CF /* MyNumberTicketPickViewController.swift */; };
+		ACA7A18420CF757000A9B365 /* MyTimeTableQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7A18320CF757000A9B365 /* MyTimeTableQueryViewController.swift */; };
+		ACA7A1C220D0D5FA00A9B365 /* MySeatPrefereancePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7A1C120D0D5FA00A9B365 /* MySeatPrefereancePickViewController.swift */; };
+		ACB686AB20CE2A950038E769 /* MyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB686AA20CE2A950038E769 /* MyCamViewController.swift */; };
+		ACBD2B6920C7AB1C0030C517 /* MyBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD2B6820C7AB1C0030C517 /* MyBookingTableViewController.swift */; };
+		ACBD2B6B20C7B0FC0030C517 /* MyDatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD2B6A20C7B0FC0030C517 /* MyDatePickViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC11907720C58F13004DD48E /* 201806_prj_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 201806_prj_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC11907A20C58F13004DD48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC11907C20C58F13004DD48E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC11907F20C58F13004DD48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC11908120C58F15004DD48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC11908420C58F15004DD48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC11908620C58F15004DD48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC11908C20C59695004DD48E /* MyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
+		AC11908E20C59B76004DD48E /* MyHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomePageViewController.swift; sourceTree = "<group>"; };
+		AC22AA1A20C6B91200CC3CFF /* MypickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypickViewController.swift; sourceTree = "<group>"; };
+		AC6B5FD420D2355B00C9669D /* MybookingUserInfoInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MybookingUserInfoInputViewController.swift; sourceTree = "<group>"; };
+		AC6DA4B720D18BF900D36318 /* myNumberTickertAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myNumberTickertAlertViewController.swift; sourceTree = "<group>"; };
+		AC854D0F20C7F4AE0089256D /* MySegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegmentedControl.swift; sourceTree = "<group>"; };
+		AC8C564D20CBBB2600329FC8 /* PayTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTicketViewController.swift; sourceTree = "<group>"; };
+		AC8C565120CC05F000329FC8 /* DeviceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInput.swift; sourceTree = "<group>"; };
+		AC90086D20C841BA00D788CF /* MyNumberTicketPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNumberTicketPickViewController.swift; sourceTree = "<group>"; };
+		ACA7A18320CF757000A9B365 /* MyTimeTableQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeTableQueryViewController.swift; sourceTree = "<group>"; };
+		ACA7A1C120D0D5FA00A9B365 /* MySeatPrefereancePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySeatPrefereancePickViewController.swift; sourceTree = "<group>"; };
+		ACB686AA20CE2A950038E769 /* MyCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCamViewController.swift; sourceTree = "<group>"; };
+		ACBD2B6820C7AB1C0030C517 /* MyBookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingTableViewController.swift; sourceTree = "<group>"; };
+		ACBD2B6A20C7B0FC0030C517 /* MyDatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatePickViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC11907420C58F13004DD48E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC11906E20C58F13004DD48E = {
+			isa = PBXGroup;
+			children = (
+				AC11907920C58F13004DD48E /* 201806_prj_1 */,
+				AC11907820C58F13004DD48E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC11907820C58F13004DD48E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC11907720C58F13004DD48E /* 201806_prj_1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC11907920C58F13004DD48E /* 201806_prj_1 */ = {
+			isa = PBXGroup;
+			children = (
+				AC11907A20C58F13004DD48E /* AppDelegate.swift */,
+				AC11907C20C58F13004DD48E /* ViewController.swift */,
+				AC8C564D20CBBB2600329FC8 /* PayTicketViewController.swift */,
+				AC11907E20C58F13004DD48E /* Main.storyboard */,
+				ACB686AA20CE2A950038E769 /* MyCamViewController.swift */,
+				ACA7A1C120D0D5FA00A9B365 /* MySeatPrefereancePickViewController.swift */,
+				AC6B5FD420D2355B00C9669D /* MybookingUserInfoInputViewController.swift */,
+				AC6DA4B720D18BF900D36318 /* myNumberTickertAlertViewController.swift */,
+				ACBD2B6820C7AB1C0030C517 /* MyBookingTableViewController.swift */,
+				ACA7A18320CF757000A9B365 /* MyTimeTableQueryViewController.swift */,
+				AC90086D20C841BA00D788CF /* MyNumberTicketPickViewController.swift */,
+				AC11908120C58F15004DD48E /* Assets.xcassets */,
+				AC854D0F20C7F4AE0089256D /* MySegmentedControl.swift */,
+				AC11908320C58F15004DD48E /* LaunchScreen.storyboard */,
+				ACBD2B6A20C7B0FC0030C517 /* MyDatePickViewController.swift */,
+				AC11908620C58F15004DD48E /* Info.plist */,
+				AC11908C20C59695004DD48E /* MyTabBarViewController.swift */,
+				AC11908E20C59B76004DD48E /* MyHomePageViewController.swift */,
+				AC22AA1A20C6B91200CC3CFF /* MypickViewController.swift */,
+				AC8C565120CC05F000329FC8 /* DeviceInput.swift */,
+			);
+			path = 201806_prj_1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC11907620C58F13004DD48E /* 201806_prj_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC11908920C58F15004DD48E /* Build configuration list for PBXNativeTarget "201806_prj_1" */;
+			buildPhases = (
+				AC11907320C58F13004DD48E /* Sources */,
+				AC11907420C58F13004DD48E /* Frameworks */,
+				AC11907520C58F13004DD48E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 201806_prj_1;
+			productName = 201806_prj_1;
+			productReference = AC11907720C58F13004DD48E /* 201806_prj_1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC11906F20C58F13004DD48E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Yen;
+				TargetAttributes = {
+					AC11907620C58F13004DD48E = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AC11907220C58F13004DD48E /* Build configuration list for PBXProject "201806_prj_1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC11906E20C58F13004DD48E;
+			productRefGroup = AC11907820C58F13004DD48E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC11907620C58F13004DD48E /* 201806_prj_1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC11907520C58F13004DD48E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC11908520C58F15004DD48E /* LaunchScreen.storyboard in Resources */,
+				AC11908220C58F15004DD48E /* Assets.xcassets in Resources */,
+				AC11908020C58F13004DD48E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC11907320C58F13004DD48E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC11908F20C59B76004DD48E /* MyHomePageViewController.swift in Sources */,
+				ACBD2B6B20C7B0FC0030C517 /* MyDatePickViewController.swift in Sources */,
+				AC11908D20C59695004DD48E /* MyTabBarViewController.swift in Sources */,
+				AC8C565220CC05F000329FC8 /* DeviceInput.swift in Sources */,
+				ACA7A18420CF757000A9B365 /* MyTimeTableQueryViewController.swift in Sources */,
+				AC90086E20C841BA00D788CF /* MyNumberTicketPickViewController.swift in Sources */,
+				AC11907D20C58F13004DD48E /* ViewController.swift in Sources */,
+				AC6DA4B820D18BF900D36318 /* myNumberTickertAlertViewController.swift in Sources */,
+				AC22AA1B20C6B91200CC3CFF /* MypickViewController.swift in Sources */,
+				AC11907B20C58F13004DD48E /* AppDelegate.swift in Sources */,
+				AC8C564E20CBBB2600329FC8 /* PayTicketViewController.swift in Sources */,
+				AC854D1020C7F4AE0089256D /* MySegmentedControl.swift in Sources */,
+				ACA7A1C220D0D5FA00A9B365 /* MySeatPrefereancePickViewController.swift in Sources */,
+				ACB686AB20CE2A950038E769 /* MyCamViewController.swift in Sources */,
+				AC6B5FD520D2355B00C9669D /* MybookingUserInfoInputViewController.swift in Sources */,
+				ACBD2B6920C7AB1C0030C517 /* MyBookingTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC11907E20C58F13004DD48E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC11907F20C58F13004DD48E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC11908320C58F15004DD48E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC11908420C58F15004DD48E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC11908720C58F15004DD48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC11908820C58F15004DD48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC11908A20C58F15004DD48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76T5KWEPVV;
+				INFOPLIST_FILE = 201806_prj_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.iii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AC11908B20C58F15004DD48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76T5KWEPVV;
+				INFOPLIST_FILE = 201806_prj_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.iii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC11907220C58F13004DD48E /* Build configuration list for PBXProject "201806_prj_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC11908720C58F15004DD48E /* Debug */,
+				AC11908820C58F15004DD48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC11908920C58F15004DD48E /* Build configuration list for PBXNativeTarget "201806_prj_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC11908A20C58F15004DD48E /* Debug */,
+				AC11908B20C58F15004DD48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC11906F20C58F13004DD48E /* Project object */;
+}

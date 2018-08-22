@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_018_06_22_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vJ-RM-kUu">
+                                <rect key="frame" x="248" y="142" width="54" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="➡️"/>
+                                <connections>
+                                    <action selector="rightTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="QUW-dK-JM3"/>
+                                    <action selector="rightTouchUpInside:" destination="BYZ-38-t0r" eventType="touchDragExit" id="8Jx-Xc-JbW"/>
+                                    <action selector="rightTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUQ-Ri-L9N"/>
+                                    <action selector="rightTouchUpInside:" destination="BYZ-38-t0r" eventType="touchCancel" id="alp-x2-vzv"/>
+                                    <action selector="rightTouchUpInside:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="jCx-hG-Jvw"/>
+                                    <action selector="rightTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="kF2-sR-DMQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCI-pa-WuQ">
+                                <rect key="frame" x="74" y="142" width="54" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="⬅️"/>
+                                <connections>
+                                    <action selector="leftTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="eri-0i-1QN"/>
+                                    <action selector="leftTouchUpInside:" destination="BYZ-38-t0r" eventType="touchDragExit" id="Fu4-6Y-MR1"/>
+                                    <action selector="leftTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Jyc-Vq-EVX"/>
+                                    <action selector="leftTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5V-PD-JHU"/>
+                                    <action selector="leftTouchUpInside:" destination="BYZ-38-t0r" eventType="touchCancel" id="Uhg-E1-7sm"/>
+                                    <action selector="leftTouchUpInside:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="r58-Hk-DdM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

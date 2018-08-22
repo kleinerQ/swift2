@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0180528_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2d-Kv-47s">
+                                <rect key="frame" x="124" y="137" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouW-9P-kbq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxx-EA-LfC">
+                                <rect key="frame" x="187" y="477" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" tag="300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-8K-9dw">
+                                <rect key="frame" x="187" y="566" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="42"/>
+        </scene>
+        <!--Alert View-->
+        <scene sceneID="fzO-Zs-bKA">
+            <objects>
+                <viewController storyboardIdentifier="myalert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="6IR-1J-IeI" customClass="AlertView" customModule="_0180528_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RMb-CJ-Swf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-Ph-1zb">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-6g-Wyl">
+                                        <rect key="frame" x="105" y="90" width="30" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="onDismiss:" destination="6IR-1J-IeI" eventType="touchUpInside" id="yc4-7F-JdM"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzp-Vo-YWf">
+                                        <rect key="frame" x="38" y="36" width="176" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.56240206069999998" blue="0.24172085730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1gn-cf-eGr"/>
+                                    <constraint firstAttribute="trailing" secondItem="wzp-Vo-YWf" secondAttribute="trailing" constant="26" id="1ng-py-Aag"/>
+                                    <constraint firstItem="wzp-Vo-YWf" firstAttribute="leading" secondItem="k8C-Ph-1zb" secondAttribute="leading" constant="38" id="U7U-wZ-0VZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="yfZ-6g-Wyl" secondAttribute="bottom" constant="8" id="Zif-3B-3sf"/>
+                                    <constraint firstItem="yfZ-6g-Wyl" firstAttribute="centerX" secondItem="k8C-Ph-1zb" secondAttribute="centerX" id="caW-Jo-zf9"/>
+                                    <constraint firstAttribute="height" constant="128" id="kMT-oT-32u"/>
+                                    <constraint firstItem="wzp-Vo-YWf" firstAttribute="top" secondItem="k8C-Ph-1zb" secondAttribute="top" constant="36" id="yo9-WA-Sd3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.57716181506849318" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k8C-Ph-1zb" firstAttribute="centerX" secondItem="RMb-CJ-Swf" secondAttribute="centerX" id="iKf-Xy-DqU"/>
+                            <constraint firstItem="k8C-Ph-1zb" firstAttribute="centerY" secondItem="RMb-CJ-Swf" secondAttribute="centerY" id="y3u-Ws-xSx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aez-EH-uZx"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="k8C-Ph-1zb" id="dVp-qC-Qty"/>
+                        <outlet property="text" destination="wzp-Vo-YWf" id="IvL-vl-ivf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cg-Qi-kxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.60000000000002" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0180607_layer_shape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-sv-Wvf">
+                                <rect key="frame" x="36" y="54" width="300" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="SsR-T2-sYq"/>
+                                    <constraint firstAttribute="width" constant="300" id="jdD-fr-PUl"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="8qw-xd-mIc" kind="embed" identifier="collection" id="aYC-Q6-UbM"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRn-uP-sVE">
+                                <rect key="frame" x="36" y="404" width="300" height="235"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Y5q-4y-d4a" kind="embed" id="XYP-qY-LBf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LRJ-sv-Wvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="64Q-4w-skz"/>
+                            <constraint firstItem="LRJ-sv-Wvf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="BBl-rJ-m5N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--Circle View Controller-->
+        <scene sceneID="85o-3n-QWV">
+            <objects>
+                <viewController id="8qw-xd-mIc" customClass="CircleViewController" customModule="_0180607_layer_shape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMw-hO-x59">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="273"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enW-6u-XLZ">
+                                <rect key="frame" x="110" y="222" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="dCV-z6-AM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.25882352941176473" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="enW-6u-XLZ" firstAttribute="centerX" secondItem="yMw-hO-x59" secondAttribute="centerX" id="1wf-hJ-JqA"/>
+                            <constraint firstItem="enW-6u-XLZ" firstAttribute="centerX" secondItem="yMw-hO-x59" secondAttribute="centerX" id="Y76-rj-3PX"/>
+                            <constraint firstItem="enW-6u-XLZ" firstAttribute="centerX" secondItem="yMw-hO-x59" secondAttribute="centerX" id="gHF-GE-8Xn"/>
+                            <constraint firstItem="dbo-Sg-rw1" firstAttribute="bottom" secondItem="enW-6u-XLZ" secondAttribute="bottom" constant="30" id="m2P-jy-Wsj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dbo-Sg-rw1"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="enW-6u-XLZ" id="ki2-m3-Tnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zl-Jx-tVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419.2" y="846.9265367316342"/>
+        </scene>
+        <!--My Chart View Controller-->
+        <scene sceneID="Gg4-D2-lMW">
+            <objects>
+                <viewController id="Y5q-4y-d4a" customClass="MyChartViewController" customModule="_0180607_layer_shape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5O-nX-1Bz">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="235"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aHA-F5-jeT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQe-Uw-Be8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="644"/>
+        </scene>
+    </scenes>
+</document>

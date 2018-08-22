@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0180530_3_starbucksAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzM-pv-laE">
+                                <rect key="frame" x="67" y="75" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgQ-Ah-2pj">
+                                        <rect key="frame" x="0.0" y="95" width="122" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="122" id="II6-Uu-DMs"/>
+                                        </constraints>
+                                        <state key="normal" title="加入會員">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wM-Wb-XLJ">
+                                        <rect key="frame" x="120" y="95" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Js1-9A-IfX"/>
+                                        </constraints>
+                                        <state key="normal" title="會員登入">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LQp-9a-he9"/>
+                                    <constraint firstItem="LgQ-Ah-2pj" firstAttribute="leading" secondItem="UzM-pv-laE" secondAttribute="leading" id="VRJ-gu-cxn"/>
+                                    <constraint firstItem="LgQ-Ah-2pj" firstAttribute="top" secondItem="UzM-pv-laE" secondAttribute="top" constant="95" id="VWB-Rg-W1P"/>
+                                    <constraint firstAttribute="trailing" secondItem="3wM-Wb-XLJ" secondAttribute="trailing" id="sKx-CC-Dnr"/>
+                                    <constraint firstItem="3wM-Wb-XLJ" firstAttribute="top" secondItem="UzM-pv-laE" secondAttribute="top" constant="95" id="vaB-i0-q3a"/>
+                                    <constraint firstAttribute="height" constant="128" id="xvk-hZ-vqu"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaT-IS-2bc" userLabel="Tube">
+                                <rect key="frame" x="-420" y="20" width="420" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="647" id="9tx-AT-Igc"/>
+                                    <constraint firstAttribute="width" constant="420" id="qJb-Qr-wfM"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="duk-Me-aIj" kind="embed" id="fh7-4b-8K1"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJm-zj-sXO" userLabel="container">
+                                <rect key="frame" x="-220" y="20" width="220" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="IxY-JQ-nPg"/>
+                                    <constraint firstAttribute="height" constant="647" id="s4X-AZ-jVQ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="iSq-Et-3Hi" kind="embed" id="1AJ-Eg-2UA"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8l-ba-fPA" userLabel="movingBar">
+                                <rect key="frame" x="-180" y="20" width="180" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="647" id="CQC-YA-koP"/>
+                                    <constraint firstAttribute="width" constant="180" id="w2o-e0-hRf"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="B2v-cH-pIc" kind="embed" id="UFN-Q8-Q31"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZJm-zj-sXO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5H3-5I-ZoS"/>
+                            <constraint firstItem="ZJm-zj-sXO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DO7-75-AmR"/>
+                            <constraint firstItem="FaT-IS-2bc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-420" id="Dn3-hR-lHv"/>
+                            <constraint firstItem="i8l-ba-fPA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KOS-uE-2As"/>
+                            <constraint firstItem="FaT-IS-2bc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZjL-6t-m33"/>
+                            <constraint firstItem="UzM-pv-laE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-194.5" id="atm-SD-VoE"/>
+                            <constraint firstItem="i8l-ba-fPA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jEH-6f-wQv"/>
+                            <constraint firstItem="FaT-IS-2bc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="scC-BF-ZuU"/>
+                            <constraint firstItem="ZJm-zj-sXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-220" id="tUw-Nv-IPJ"/>
+                            <constraint firstItem="i8l-ba-fPA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-180" id="yEv-GM-gm3"/>
+                            <constraint firstItem="UzM-pv-laE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUz-vQ-s1C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qyx-Hg-4z9" appends="YES" id="dIG-lK-bgq"/>
+                            <outletCollection property="gestureRecognizers" destination="8rm-21-4Sq" appends="YES" id="rai-Og-cnP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="containerWidth" destination="IxY-JQ-nPg" id="yr3-t7-ILw"/>
+                        <outlet property="leadingConstrainContainer" destination="tUw-Nv-IPJ" id="E9K-rN-SnY"/>
+                        <outlet property="leadingConstrainMovingBar" destination="yEv-GM-gm3" id="4BT-UK-LOr"/>
+                        <outlet property="leadingConstrainTube" destination="Dn3-hR-lHv" id="RET-VR-Eka"/>
+                        <outlet property="movingBarWidth" destination="w2o-e0-hRf" id="tRY-KJ-jPU"/>
+                        <outlet property="tubeWidth" destination="qJb-Qr-wfM" id="zzm-0J-6Oz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="qyx-Hg-4z9">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="edgeGuesture:" destination="BYZ-38-t0r" id="aQh-N0-0b1"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <tapGestureRecognizer id="8rm-21-4Sq">
+                    <connections>
+                        <action selector="onTapClick:" destination="BYZ-38-t0r" id="T0d-Y2-W3v"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="YAX-FT-yC8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Moving Bar Table View Controller-->
+        <scene sceneID="qYi-wX-9K1">
+            <objects>
+                <tableViewController id="B2v-cH-pIc" customClass="MovingBarTableViewController" customModule="_0180530_3_starbucksAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="mD8-GO-wzx">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="eGX-7m-vkE">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ygu-Gm-XXa" style="IBUITableViewCellStyleDefault" id="Kwn-bB-qC6">
+                                        <rect key="frame" x="0.0" y="35" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kwn-bB-qC6" id="cKO-1i-NFz">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="📱首頁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ygu-Gm-XXa">
+                                                    <rect key="frame" x="16" y="0.0" width="148" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="lyT-Wf-Pk0" style="IBUITableViewCellStyleDefault" id="WL8-rf-vHl">
+                                        <rect key="frame" x="0.0" y="79" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WL8-rf-vHl" id="x65-p5-tPk">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="📔隨行卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lyT-Wf-Pk0">
+                                                    <rect key="frame" x="16" y="0.0" width="148" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KCq-9Q-9sc" style="IBUITableViewCellStyleDefault" id="Z3e-TW-Ba1">
+                                        <rect key="frame" x="0.0" y="123" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z3e-TW-Ba1" id="KpH-wO-eSC">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="📧行銷活動" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KCq-9Q-9sc">
+                                                    <rect key="frame" x="16" y="0.0" width="148" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="B2v-cH-pIc" id="U7I-ta-fjn"/>
+                            <outlet property="delegate" destination="B2v-cH-pIc" id="zkS-uG-MMo"/>
+                            <outletCollection property="gestureRecognizers" destination="zJa-4L-WcK" appends="YES" id="UJw-hG-qqx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMl-0z-n0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zJa-4L-WcK">
+                    <connections>
+                        <action selector="movingBarPanGesture:" destination="B2v-cH-pIc" id="HcA-Fh-6LM"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="22" y="983"/>
+        </scene>
+        <!--Tube View Controller-->
+        <scene sceneID="kUQ-7V-N0o">
+            <objects>
+                <viewController id="duk-Me-aIj" customClass="TubeViewController" customModule="_0180530_3_starbucksAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejA-La-OHn">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75031600820537447" green="0.99678081274032593" blue="0.25352805305636372" alpha="0.55155149647887325" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="L81-OP-sZZ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="n3Q-Qx-3J3" appends="YES" id="18b-u5-5Mu"/>
+                            <outletCollection property="gestureRecognizers" destination="T75-Fr-9Mf" appends="YES" id="RNe-4c-uhq"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asc-wd-f0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="n3Q-Qx-3J3">
+                    <connections>
+                        <action selector="onTabClose:" destination="duk-Me-aIj" id="nc2-Ie-46J"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="T75-Fr-9Mf">
+                    <connections>
+                        <action selector="onSwipe:" destination="duk-Me-aIj" id="fQZ-7A-IF1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="886" y="-609"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="2ad-7h-Obt">
+            <objects>
+                <viewController id="iSq-Et-3Hi" customClass="ContainerViewController" customModule="_0180530_3_starbucksAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsV-Qr-dYb">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.56380869289340096" green="0.56380869289340096" blue="0.56380869289340096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="9c9-SJ-zdH"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bxa-9p-DL5" appends="YES" id="bNZ-1g-8KP"/>
+                            <outletCollection property="gestureRecognizers" destination="CmD-hW-Lql" appends="YES" id="06r-Hi-edv"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRU-lV-2wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="bxa-9p-DL5">
+                    <connections>
+                        <action selector="onPanSwipe:" destination="iSq-Et-3Hi" id="D5x-2A-Xrs"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="CmD-hW-Lql">
+                    <connections>
+                        <action selector="onTapGesture:" destination="iSq-Et-3Hi" id="R2C-I2-dG3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="506" y="869"/>
+        </scene>
+    </scenes>
+</document>

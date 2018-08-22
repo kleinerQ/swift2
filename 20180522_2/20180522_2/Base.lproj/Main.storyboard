@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0180522_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7kn-cT-MFZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moU-5Y-y2s">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="下載" translatesAutoresizingMaskIntoConstraints="NO" id="Phc-Tf-hOx">
+                                                <rect key="frame" x="4" y="4" width="367" height="92"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Phc-Tf-hOx" firstAttribute="top" secondItem="moU-5Y-y2s" secondAttribute="top" constant="4" id="NO9-ci-j1S"/>
+                                            <constraint firstAttribute="height" constant="100" id="beg-RN-7go"/>
+                                            <constraint firstAttribute="trailing" secondItem="Phc-Tf-hOx" secondAttribute="trailing" constant="4" id="huZ-FZ-xgK"/>
+                                            <constraint firstAttribute="bottom" secondItem="Phc-Tf-hOx" secondAttribute="bottom" constant="4" id="k9g-jZ-6B6"/>
+                                            <constraint firstItem="Phc-Tf-hOx" firstAttribute="leading" secondItem="moU-5Y-y2s" secondAttribute="leading" constant="4" id="kJK-md-P1Y"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PEz-6V-wwY">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="323.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-yB-wWh">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="323.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCi-AK-4Cv">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="323.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWO-dx-NaL">
+                                        <rect key="frame" x="0.0" y="423.5" width="375" height="223.5"/>
+                                        <color key="backgroundColor" red="1" green="0.56240206067131582" blue="0.24172085731144877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="PEz-6V-wwY" secondAttribute="height" multiplier="2" id="flB-U2-ILH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7kn-cT-MFZ" secondAttribute="bottom" id="9jh-Pj-WfJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7kn-cT-MFZ" secondAttribute="trailing" id="Hqa-9w-56B"/>
+                            <constraint firstItem="7kn-cT-MFZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NhI-IU-X7P"/>
+                            <constraint firstItem="7kn-cT-MFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qac-CB-vWn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="下載" width="87" height="87"/>
+    </resources>
+</document>

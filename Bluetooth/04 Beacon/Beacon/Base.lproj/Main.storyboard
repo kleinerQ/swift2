@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XdV-Xi-alY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9va-ZB-wsA">
+                                <rect key="frame" x="37" y="83" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onSwitchoff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1l-Nf-jeG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZIT-Xb-SlQ"/>
+                    <connections>
+                        <outlet property="switchOffBtn" destination="9va-ZB-wsA" id="bJ2-gD-bB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="370"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tbz-Y6-J4G">
+            <objects>
+                <tabBarController id="XdV-Xi-alY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WdJ-Ch-J6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="HDv-Vu-Xpt"/>
+                        <segue destination="eTM-Y8-jcq" kind="relationship" relationship="viewControllers" id="Vda-bv-5Nu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdC-Mb-GRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307" y="758"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="L1C-3e-mGP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZY-zO-Y3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="eTM-Y8-jcq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLr-dA-WbW"/>
+                        <viewControllerLayoutGuide type="bottom" id="t17-a0-ZwW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PAf-oc-Pq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-dG-RfI">
+                                <rect key="frame" x="0.0" y="353.5" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-xM-z44">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                                        <state key="normal" title="開始串流"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-T9-FJK">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
+                                        <state key="normal" title="停止串流"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bKY-T9-FJK" firstAttribute="leading" secondItem="DaR-xM-z44" secondAttribute="trailing" id="2dX-xG-VNh"/>
+                                    <constraint firstAttribute="bottom" secondItem="DaR-xM-z44" secondAttribute="bottom" id="8wA-g8-vs7"/>
+                                    <constraint firstItem="bKY-T9-FJK" firstAttribute="top" secondItem="rmI-dG-RfI" secondAttribute="top" id="Gr6-hW-UrZ"/>
+                                    <constraint firstItem="bKY-T9-FJK" firstAttribute="leading" secondItem="DaR-xM-z44" secondAttribute="trailing" id="U40-pb-EWg"/>
+                                    <constraint firstItem="DaR-xM-z44" firstAttribute="top" secondItem="rmI-dG-RfI" secondAttribute="top" id="VP7-Yt-P39"/>
+                                    <constraint firstAttribute="trailing" secondItem="bKY-T9-FJK" secondAttribute="trailing" id="Xgu-7K-ZSu"/>
+                                    <constraint firstAttribute="bottom" secondItem="bKY-T9-FJK" secondAttribute="bottom" id="Y4q-KJ-HcR"/>
+                                    <constraint firstItem="DaR-xM-z44" firstAttribute="leading" secondItem="rmI-dG-RfI" secondAttribute="leading" id="bPG-g6-q9H"/>
+                                </constraints>
+                            </stackView>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-dQ-bLf">
+                                <rect key="frame" x="16" y="91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rmI-dG-RfI" secondAttribute="trailing" id="6b7-ox-bof"/>
+                            <constraint firstItem="rmI-dG-RfI" firstAttribute="leading" secondItem="PAf-oc-Pq1" secondAttribute="leading" id="dQ5-md-zyU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ubM-Pc-4R2"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="1408.2458770614694"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0180522_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TI5-KS-KlU">
+                                <rect key="frame" x="80" y="74" width="271" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1t-gg-XiM">
+                                <rect key="frame" x="30" y="74" width="42" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW4-Hg-bs9">
+                                <rect key="frame" x="30" y="604" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZy-zX-ZO5">
+                                <rect key="frame" x="30" y="172" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B1t-gg-XiM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="1mS-RL-qvZ"/>
+                            <constraint firstItem="TI5-KS-KlU" firstAttribute="bottom" secondItem="B1t-gg-XiM" secondAttribute="bottom" id="5lw-fK-SVS"/>
+                            <constraint firstItem="B1t-gg-XiM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Coe-d4-xdU"/>
+                            <constraint firstItem="B1t-gg-XiM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="D9E-YY-qZX"/>
+                            <constraint firstItem="fW4-Hg-bs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="F3U-h2-0mT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="649"/>
+                            </constraint>
+                            <constraint firstItem="sZy-zX-ZO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="LDy-oN-hzC"/>
+                            <constraint firstItem="sZy-zX-ZO5" firstAttribute="top" secondItem="fW4-Hg-bs9" secondAttribute="bottom" constant="38" id="PF6-KH-Xkp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TI5-KS-KlU" secondAttribute="trailing" constant="24" id="TDQ-IO-qhQ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fW4-Hg-bs9" secondAttribute="trailing" constant="20" symbolic="YES" id="WSE-9G-kCb"/>
+                            <constraint firstItem="B1t-gg-XiM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="YIi-Qq-30b"/>
+                            <constraint firstItem="fW4-Hg-bs9" firstAttribute="top" secondItem="B1t-gg-XiM" secondAttribute="bottom" constant="500" id="g9d-DT-mzJ"/>
+                            <constraint firstItem="TI5-KS-KlU" firstAttribute="leading" secondItem="B1t-gg-XiM" secondAttribute="trailing" constant="8" id="v8c-XW-oBr"/>
+                            <constraint firstItem="TI5-KS-KlU" firstAttribute="top" secondItem="B1t-gg-XiM" secondAttribute="top" id="weA-Sp-GXL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sZy-zX-ZO5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="LDy-oN-hzC"/>
+                                <exclude reference="PF6-KH-Xkp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sZy-zX-ZO5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="LDy-oN-hzC"/>
+                                <include reference="PF6-KH-Xkp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

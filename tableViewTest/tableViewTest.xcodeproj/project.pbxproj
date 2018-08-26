@@ -12,6 +12,7 @@
 		ACE6AE24212D969D0009704E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE6AE22212D969D0009704E /* Main.storyboard */; };
 		ACE6AE26212D969F0009704E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE6AE25212D969F0009704E /* Assets.xcassets */; };
 		ACE6AE29212D969F0009704E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE6AE27212D969F0009704E /* LaunchScreen.storyboard */; };
+		ACE6AE33212FB2A10009704E /* myCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6AE32212FB2A10009704E /* myCellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ACE6AE25212D969F0009704E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE6AE28212D969F0009704E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACE6AE2A212D969F0009704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE6AE32212FB2A10009704E /* myCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				ACE6AE1E212D969D0009704E /* AppDelegate.swift */,
 				ACE6AE20212D969D0009704E /* ViewController.swift */,
 				ACE6AE22212D969D0009704E /* Main.storyboard */,
+				ACE6AE32212FB2A10009704E /* myCellViewController.swift */,
 				ACE6AE25212D969F0009704E /* Assets.xcassets */,
 				ACE6AE27212D969F0009704E /* LaunchScreen.storyboard */,
 				ACE6AE2A212D969F0009704E /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE6AE21212D969D0009704E /* ViewController.swift in Sources */,
+				ACE6AE33212FB2A10009704E /* myCellViewController.swift in Sources */,
 				ACE6AE1F212D969D0009704E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

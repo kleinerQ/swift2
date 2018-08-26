@@ -26,7 +26,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = "ggg"
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ontapAction(_:)))
+        
+        cell.addGestureRecognizer(tap)
         return cell
+    }
+    
+    @objc func ontapAction(_ sender:UITapGestureRecognizer){
+        
+        let mainView = myCellViewController() //ViewController = Name of your controller
+        let nav1 = UINavigationController(rootViewController: mainView)
+        nav1.navigationBar.topItem?.title = "sdfsdss"
+        self.navigationController?.pushViewController(nav1, animated: false)
+        
+        self.present(nav1, animated: false, completion: nil)
+        //self.present(mainView, animated: false, completion: nil)
+        
+        
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerText = UILabel()
@@ -48,7 +64,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         mystackView.axis = .horizontal
         mystackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mystackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        mystackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        mystackView.heightAnchor.constraint(equalTo:view.widthAnchor, multiplier: 0.25).isActive = true
         mybtn1.backgroundColor = .red
         mybtn2.backgroundColor = .green
         mybtn1.setTitle("Btn1", for: .normal)
@@ -59,7 +75,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         mystackView.addArrangedSubview(mybtn1)
         mystackView.addArrangedSubview(mybtn2)
-        
+
+        mystackView.backgroundColor = .yellow
+        mystackView.spacing = 8
 //
   
         myTableView.translatesAutoresizingMaskIntoConstraints = false
